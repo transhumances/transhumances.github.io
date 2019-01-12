@@ -26,7 +26,7 @@
   }
 
   &.roulotte{
-    background: linear-gradient(to bottom, #{fade-out($primary-text, .9)} 0%,#{fade-out(#B0C991, .7)} 75%,$secondary-bg 100%), url('../img/roulotte-bg-masthead.jpg');
+    background: linear-gradient(to bottom, #{fade-out($primary-text, .9)} 0%,#{fade-out(#B0C991, .7)} 75%,$secondary-bg 100%), url('../img/roulotte/roulotte-bg-masthead.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -34,7 +34,7 @@
   }
 
   &.yourte{
-    background: linear-gradient(to bottom, #{fade-out($primary-text, .9)} 0%,#{fade-out(#B0C991, .7)} 75%,$secondary-bg 100%), url('../img/yourte-bg-masthead.jpg');
+    background: linear-gradient(to bottom, #{fade-out($primary-text, .9)} 0%,#{fade-out(#B0C991, .7)} 75%,$secondary-bg 100%), url('../img/yourte/yourte-bg-masthead.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
