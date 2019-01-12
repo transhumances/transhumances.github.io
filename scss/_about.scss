@@ -1,0 +1,25 @@
+.about-section {
+
+
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(to bottom, $secondary-bg 0%,#{fade-out($secondary-bg, .1)} 75%,#{fade-out($secondary-bg, .2)} 100%);
+  p {
+
+    color: white;
+    strong{
+      color: $primary-text;
+
+    }
+  }
+
+
+  h2,h3,h4{
+    font-family: 'MarkerFeltWide';
+    color: $primary-text;
+  }
+  h2{
+    font-weight: bolder;
+  }
+
+}

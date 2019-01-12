@@ -1,0 +1,46 @@
+.projects-section {
+
+  background: linear-gradient(to bottom, $secondary-bg 0%,#{fade-out($secondary-bg, .1)} 75%,#{fade-out($secondary-bg, .2)} 100%);
+  padding: 3rem 0;
+  h1{
+    padding: 2rem 0;
+  }
+
+  .col {
+    margin-right: 2rem;
+    p{
+      text-align: justify;
+    }
+    
+  }
+  .row{
+    background-color: transparent;
+  }
+
+  .featured-text-left {
+    padding: 2rem;
+    @media (min-width: 992px) {
+      padding: 0 0 0 2rem;
+      border-left: 0.5rem solid $primary-bg;
+    }
+  }
+  .featured-text-right {
+    padding: 2rem;
+    @media (min-width: 992px) {
+      padding: 0 2rem 0 0;
+      border-right: 0.5rem solid $primary-bg;
+    }
+  }
+  .project-text {
+    padding: 3rem;
+    font-size: 90%;
+    @media (min-width: 992px) {
+      padding: 5rem;
+      hr {
+        border-color: $primary;
+        border-width: .25rem;
+        width: 30%;
+      }
+    }
+  }
+}
