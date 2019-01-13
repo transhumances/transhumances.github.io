@@ -44,10 +44,16 @@ h1{
   font-size: 3em;
   color: $primary-text;
   font-weight: 700;
+  @media screen and (max-width: 600px){
+    font-size: 1.5em;
+  }
 }
 h2{
   color: $white;
   font-weight: 700;
+  @media screen and (max-width: 600px){
+    font-size: 1.2em;
+  }
 }
 
 footer {
