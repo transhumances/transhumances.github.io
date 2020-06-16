@@ -1,0 +1,78 @@
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<!-- Navigation -->
+<div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">
+        <img src="/img/texte_transhumances_fond.png" alt="logo transhumances">
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#info-covid" rel="modal:open">Infos COVID</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#about">Présentation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#hebergements">Hébergements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#communs">Espaces</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#infos">Infos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="assets/contrat_reservation_2019_10.pdf"
+                    target="_blank">Réservation</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="info-covid" class="modal">
+    <h1>Conditions d’accueil été 2020</h1>
+    <h3>Mise à jour 13 juin 2020</h3>
+
+    <p class="text-black-50">Compte tenu des mesures sanitaires en vigueur nous avons <strong>adapté</strong> nos
+        conditions d’accueil pour l’été 2020.</p>
+
+    <p>Afin de préserver les uns et les autres des risques sanitaires, les locaux (cuisine et sanitaires) ne peuvent pas
+        être partagés entre différents locataires. De ce fait, nous sommes amenés à réduire le nombre d’hôtes accueillis
+        en même temps, pour organiser un « roulement » dans l’utilisation des yourtes et espaces communs.</p>
+    <p class="mb-0">Pour toutes nos locations (gite ou yourtes):</p>
+    <ul>
+        <li>Nous demandons à nos voyageurs de bien vouloir <strong>apporter leur équipement de couchage</strong> (draps, oreillers, sacs
+            de couchage ou couette).</li>
+        <li>La roulotte n’est pour l’instant pas disponible à la location.</li>
+        <li>La capacité d’accueil sous yourte est réduite à 10 personnes maximum (2 yourtes de 5 places).</li>
+        <li>Nous ne sommes pas en mesure d’assurer les repas, pique nique et petits déjeuners pour ceux qui le
+            souhaiteraient.</li>
+    </ul>
+    <a id="stop-info-covid" href="#" rel="modal:close">Ne plus me montrer ce message</a>
+</div>
+
+<script>
+    // open on first view
+    const key = "stopInfoCovid"
+    if (!localStorage.getItem(key)) {
+        setTimeout(() => {
+            $('#info-covid').modal()
+        }, 500)
+    }
+
+    $('#stop-info-covid').click(() => localStorage.setItem(key, true))
+
+
+</script>

@@ -1,0 +1,24 @@
+.modal {
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    h3 {
+        text-align: right;
+        font-size: .8em;
+    }
+    p, ul {
+        text-align: justify;
+        color: rgba(0,0,0,.5);
+        font-size: .9em;
+        line-height: 1.25em;
+        strong {
+            color: #7e5800;
+        }
+    }
+}
+
+.modal a.close-modal {
+    top: 2px !important;
+    right: 2px !important;
+}
