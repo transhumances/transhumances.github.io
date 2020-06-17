@@ -22,3 +22,26 @@
     top: 2px !important;
     right: 2px !important;
 }
+
+.modal {
+    .footer {
+        text-align: right;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .jquery-modal {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 20px !important;
+    }
+    .modal {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-top: 30px !important;
+        ul {
+            padding-left: 30px !important;
+        }
+    }
+}
