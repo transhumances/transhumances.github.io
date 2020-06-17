@@ -83,7 +83,7 @@
     if (!localStorage.getItem(key)) {
         setTimeout(() => {
             $('#info-covid').modal()
-        }, 500)
+        }, 250)
     }
 
     $('#stop-info-covid').click(() => localStorage.setItem(key, true))

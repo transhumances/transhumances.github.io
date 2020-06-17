@@ -5,6 +5,7 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132324022-1"></script>
+    <script src="js/lazysizes.min.js" async></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -35,7 +36,7 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
-</head>
+ </head>
 
 <body id="page-top">
 
@@ -107,7 +108,7 @@
         <!-- Project One Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="bg-tertiary col-lg-6 d-flex flex-column justify-content-center">
-                <img class="img-fluid" src="img/cuisine.jpg" alt="">
+                <img class="lazyload img-fluid" data-src="img/cuisine.jpg" alt="">
             </div>
             <div class="col-lg-6">
                 <div class="bg-tertiary text-center h-100 project">
@@ -127,7 +128,7 @@
         <!-- Project Two Row -->
         <div class="row justify-content-center no-gutters">
             <div class="bg-tertiary col-lg-6 d-flex flex-column justify-content-center">
-                <img class="img-fluid" src="img/sanitaires.jpg" alt="">
+                <img class="lazyload img-fluid" data-src="img/sanitaires.jpg" alt="">
             </div>
             <div class="col-lg-6 order-lg-first">
                 <div class="bg-tertiary text-center h-100 project">
@@ -202,7 +203,7 @@
 
         <div class="social d-flex justify-content-center text-black-50">
             <a href="https://www.airbnb.fr/rooms/29536504" target="_blank"  class="mx-2">
-                <img src="assets/Airbnb_logo.svg" style="height: 1.7rem">
+                <img class="lazyload" data-src="assets/Airbnb_logo.svg" style="height: 1.7rem">
             </a>
             <a href="https://www.facebook.com/Association.Transhumances" target="_blank" class="mx-2">
                 <i class="fab fa-facebook-f"></i>
@@ -221,52 +222,52 @@
 <div id="links" style="display:none">
 
     <a href="img/yourte/yourte-bg-masthead.jpg">
-        <img src="img/yourte/yourte-bg-masthead.jpg">
+        <img class="lazyload" data-src="img/yourte/yourte-bg-masthead.jpg">
     </a>
     <a href="img/yourte/IMG_20190112_165706.jpg">
-        <img src="img/yourte/IMG_20190112_165706.jpg">
+        <img class="lazyload" data-src="img/yourte/IMG_20190112_165706.jpg">
     </a>
     <a href="img/yourte/yourte_interieur.JPG">
-        <img src="img/yourte/interieur.JPG">
+        <img class="lazyload" data-src="img/yourte/interieur.JPG">
     </a>
     <a href="img/yourte/P1010969.JPG">
-        <img src="img/yourte/P1010969.JPG">
+        <img class="lazyload" data-src="img/yourte/P1010969.JPG">
     </a>
     <a href="img/yourte/P1040624.JPG">
-        <img src="img/yourte/P1040624.JPG">
+        <img class="lazyload" data-src="img/yourte/P1040624.JPG">
     </a>
     <a href="img/yourte/P1040625.JPG">
-        <img src="img/yourte/P1040625.JPG">
+        <img class="lazyload" data-src="img/yourte/P1040625.JPG">
     </a>
     <a href="img/yourte/P1040626.JPG">
-        <img src="img/yourte/P1040626.JPG">
+        <img class="lazyload" data-src="img/yourte/P1040626.JPG">
     </a>
     <a href="img/yourte/P1040629.JPG">
-        <img src="img/yourte/P1040629.JPG">
+        <img class="lazyload" data-src="img/yourte/P1040629.JPG">
     </a>
     <a href="img/yourte/P1040636.JPG">
-        <img src="img/yourte/P1040636.JPG">
+        <img class="lazyload" data-src="img/yourte/P1040636.JPG">
     </a>
     <a href="img/yourte/P1040638.JPG">
-        <img src="img/yourte/P1040638.JPG">
+        <img class="lazyload" data-src="img/yourte/P1040638.JPG">
     </a>
     <a href="img/yourte/P_20171014_145143.jpg">
-        <img src="img/yourte/P_20171014_145143.jpg">
+        <img class="lazyload" data-src="img/yourte/P_20171014_145143.jpg">
     </a>
     <a href="img/yourte/P_20171014_145151.jpg">
-        <img src="img/yourte/P_20171014_145151.jpg">
+        <img class="lazyload" data-src="img/yourte/P_20171014_145151.jpg">
     </a>
     <a href="img/yourte/imgp4529.jpg">
-        <img src="img/yourte/imgp4529.jpg">
+        <img class="lazyload" data-src="img/yourte/imgp4529.jpg">
     </a>
     <a href="img/yourte/soleilEtYourte.jpg">
-        <img src="img/yourte/soleilEtYourte.jpg">
+        <img class="lazyload" data-src="img/yourte/soleilEtYourte.jpg">
     </a>
     <a href="img/yourte/DSCF6037.JPG">
-        <img src="img/yourte/DSCF6037.JPG">
+        <img class="lazyload" data-src="img/yourte/DSCF6037.JPG">
     </a>
     <a href="img/yourte/yourte_interieur_2.jpg">
-        <img src="img/yourte/yourte_interieur_2.jpg">
+        <img class="lazyload" data-src="img/yourte/yourte_interieur_2.jpg">
     </a>
 </div>
 
@@ -292,7 +293,8 @@
         document.getElementById('links').getElementsByTagName('a'),
         {
             container: '#blueimp-gallery-carousel',
-            carousel: true
+            carousel: true,
+            preloadRange: 1
         }
     );
 </script>

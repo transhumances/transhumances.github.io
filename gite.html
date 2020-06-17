@@ -5,6 +5,7 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132324022-1"></script>
+    <script src="js/lazysizes.min.js" async></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -35,7 +36,7 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
-</head>
+ </head>
 
 <body id="page-top">
 
@@ -158,7 +159,7 @@
 
         <div class="social d-flex justify-content-center text-black-50">
             <a href="https://www.airbnb.fr/rooms/8249405" target="_blank"  class="mx-2">
-                <img src="assets/Airbnb_logo.svg" style="height: 1.7rem">
+                <img class="lazyload" data-src="assets/Airbnb_logo.svg" style="height: 1.7rem">
             </a>
             <a href="https://www.facebook.com/Association.Transhumances" class="mx-2">
                 <i class="fab fa-facebook-f"></i>
@@ -176,46 +177,46 @@
 
 <div id="links" style="display:none">
     <a href="img/gite/DSCF6077.JPG">
-        <img src="img/gite/DSCF6077.JPG">
+        <img class="lazyload" data-src="img/gite/DSCF6077.JPG">
     </a>
     <a href="img/gite/DSCF6065.JPG">
-        <img src="img/gite/DSCF6065.JPG">
+        <img class="lazyload" data-src="img/gite/DSCF6065.JPG">
     </a>
     <a href="img/gite/IMG_2464.JPG">
-        <img src="img/gite/IMG_2464.JPG">
+        <img class="lazyload" data-src="img/gite/IMG_2464.JPG">
     </a>
     <a href="img/gite/IMG_2465.JPG">
-        <img src="img/gite/IMG_2465.JPG">
+        <img class="lazyload" data-src="img/gite/IMG_2465.JPG">
     </a>
     <a href="img/gite/IMG_2466.JPG">
-        <img src="img/gite/IMG_2466.JPG">
+        <img class="lazyload" data-src="img/gite/IMG_2466.JPG">
     </a>
     <a href="img/gite/IMG_2469.JPG">
-        <img src="img/gite/IMG_2469.JPG">
+        <img class="lazyload" data-src="img/gite/IMG_2469.JPG">
     </a>
     <a href="img/gite/IMG_2473.JPG">
-        <img src="img/gite/IMG_2473.JPG">
+        <img class="lazyload" data-src="img/gite/IMG_2473.JPG">
     </a>
     <a href="img/gite/P1040361.jpg">
-        <img src="img/gite/P1040361.jpg">
+        <img class="lazyload" data-src="img/gite/P1040361.jpg">
     </a>
     <a href="img/gite/P_20180610_150422.jpg">
-        <img src="img/gite/P_20180610_150422.jpg">
+        <img class="lazyload" data-src="img/gite/P_20180610_150422.jpg">
     </a>
     <a href="img/gite/P_20180610_150450.jpg">
-        <img src="img/gite/P_20180610_150450.jpg">
+        <img class="lazyload" data-src="img/gite/P_20180610_150450.jpg">
     </a>
     <a href="img/gite/P_20180610_150540.jpg">
-        <img src="img/gite/P_20180610_150540.jpg">
+        <img class="lazyload" data-src="img/gite/P_20180610_150540.jpg">
     </a>
     <a href="img/gite/P_20180610_150625.jpg">
-        <img src="img/gite/P_20180610_150625.jpg">
+        <img class="lazyload" data-src="img/gite/P_20180610_150625.jpg">
     </a>
     <a href="img/gite/P_20180610_150643.jpg">
-        <img src="img/gite/P_20180610_150643.jpg">
+        <img class="lazyload" data-src="img/gite/P_20180610_150643.jpg">
     </a>
     <a href="img/gite/P_20180610_150653.jpg">
-        <img src="img/gite/P_20180610_150653.jpg">
+        <img class="lazyload" data-src="img/gite/P_20180610_150653.jpg">
     </a>
 </div>
 
@@ -237,7 +238,8 @@
         document.getElementById('links').getElementsByTagName('a'),
         {
             container: '#blueimp-gallery-carousel',
-            carousel: true
+            carousel: true,
+            preloadRange: 1
         }
     );
 
