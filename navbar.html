@@ -16,9 +16,6 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link strong" href="#info-covid" rel="modal:open">Infos&nbsp;COVID</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="index.html#about">Présentation</a>
             </li>
             <li class="nav-item">
@@ -40,47 +37,3 @@
         </ul>
     </div>
 </div>
-
-<div id="info-covid" class="modal">
-    <h1>Conditions d’accueil COVID-19</h1>
-    <h3>Mise à jour du 05 octobre 2020</h3>
-
-    <p class="text-black-50">Compte tenu des mesures sanitaires en vigueur nous avons <strong>adapté nos
-            conditions d’accueil</strong>.</p>
-    <p>
-        Afin de préserver les uns et les autres des risques sanitaires, <strong>le partage des locaux
-        (cuisine et sanitaires) est limité</strong>. De plus, nous avons réduit le nombre d’hôtes
-        accueillis en même temps, pour organiser un «roulement» dans l’utilisation des
-        yourtes et espaces communs.
-    </p>
-    <p class="mb-0">Pour toutes nos locations:</p>
-    <ul>
-        <li>Nous demandons à nos voyageurs de bien vouloir <strong>apporter leur équipement de couchage</strong> (draps,
-            oreillers, sacs
-            de couchage ou couettes).</li>
-    </ul>
-
-    <p>Ces mesures évolueront au fil des dispositions gouvernementales, en espérant revenir à notre fonctionnement
-        habituel.</p>
-    <p>N’hésitez pas à nous questionner par mail ou téléphone.</p>
-    <p>Au plaisir de vous accueillir.</p>
-
-    <div class="footer">
-        <a id="stop-info-covid" href="#" rel="modal:close">Ne plus me montrer ce message</a>
-    </div>
-
-</div>
-
-<script>
-    // open on first view
-    const key = "stopInfoCovid_2020-10-05_v2"
-    if (!localStorage.getItem(key)) {
-        setTimeout(() => {
-            $('#info-covid').modal()
-        }, 250)
-    }
-
-    $('#stop-info-covid').click(() => localStorage.setItem(key, true))
-
-
-</script>
